@@ -2,7 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return HttpResponse('<p>start</p>')
+    return render(request,'blog/index.html')
 
 def about(request):
-    return HttpResponse('<p>rot</p>')
+    return render(request,'blog/about.html')
+def lusa(request):
+    return render(request,'blog/lusa.html')
