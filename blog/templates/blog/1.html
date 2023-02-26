@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> {%block title%} {%endblock%}
+    <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check</title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+  </symbol>
+</svg>
+
+    <div class="container py-3">
+        <header>
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <span class="fs-2">😉👍🎁👩‍🍳🏞️🏖️🍽️😉👍🎁👩‍🍳🏞️🏖️🍽️"</span>
+               <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+               </nav>
+               <a class="bdn btn-outline-primary" href="/login">Авторизація</a>
+
+           </div>
+
+
+            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                 <span class="fs-2">😉👍🎁👩‍🍳🏞️🏖️🍽️😉👍🎁👩‍🍳🏞️🏖️🍽️"</span>
+
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="/">Головна </a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="/vse">ВСЕ </a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="/wido">Бомба </a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="/about">Про магазин </a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="/register">Реєстрація</a>
+
+                </nav>
+                <a class="bdn btn-outline-primary" href="/create">Додати товар</a>
+
+            </div>
+            {% block body %} {% endblock %}
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">приветик </h1>
+                <p class="fs-5 text-muted">Купуйте в нас </p>
+            </div>
+            {% block content %}{% endblock %}
+        </header>
+
+
+
+
+
+
+</body>
+
+</html>
