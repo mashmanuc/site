@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'blog/sass/main.css'%}">
+    <title>{% block title%}{% endblock %}</title>
+</head>
+
+<body>
+<header >
+    <div class="header-container">
+
+<div class="logo">
+<img  src="{% static 'blog/img/logo.jpg'%}" alt="доброго дня" style="width: 125px;border-radius: 50%;">
+</div>
+            <div class="nav-list">
+
+
+                <nav class="nav-list__container">
+                    <a class="nav-list__elements" href="{% url 'home'%}">Головна </a>
+                    <a class="nav-list__elements" href="{% url 'lusa'%}">ВСЕ </a>
+                    <a class="nav-list__elements" href="{% url 'lusa'%}">Бомба </a>
+                    <a class="nav-list__elements" href="{% url 'about'%}">Про магазин </a>
+                    <a class="nav-list__elements" href="">Реєстрація</a>
+                    <a class="nav-list__elements" href="">Додати товар</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+<div class="">{%block content %}{% endblock %}</div>    
+<div class="">
+                <h1 class="">приветик </h1>
+                <p class=" ">Купуйте в нас </p>
+            </div>
+        </main>
+    <footer class="footer__content">
+        <section class="address-content">
+            <span class="smiles">😉👍🎁👩‍🍳🏞️🏖️🍽️😉👍🎁👩‍🍳🏞️🏖️🍽️"</span>
+            <p class="address">Адреса:м.Луцьк, пр-т Дружби , 52 </p>
+            <li class="pre-adress">
+                <a class="pre-adress__element" href="mail:mathmanuk@gmail.com">E-mail:mathmanuk@gmail.com</a>
+            </li>
+            <li class="pre-adress">
+                <a class="pre-adress__element" href="tel:0935486352">Телефон:+380935486352</a>
+            </li>
+        </section>
+        <section class="instangram-content" >
+            <button class="instangram-button">
+                <div class="instangram-txt__left">
+                    <a href="">
+                    <svg width="50" height="50">
+                        <use href="/img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                    <h3 class="instangram-txt">--- Наш інстаграм</h3>
+                </div>
+            </button>
+            <button class="instangram-button">
+                <div class="instangram-txt__left">
+                    <a href="">
+                    <svg width="50" height="50">
+                        <use href="/img/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                    <h3 class="instangram-txt">--- Наш фейсбук</h3>
+                </div>
+            </button>
+            <button class="instangram-button">
+                <div class="instangram-txt__left">
+                    <a href="">
+                    <svg width="50" height="50">
+                        <use href="/img/symbol-defs.svg#icon-telegram"></use>
+                    </svg>
+                </a>
+                    <h3 class="instangram-txt">--- Наш телеграм</h3>
+                </div>
+            </button>
+        </section>
+    </footer>
+</body>
+</html>
+  
+
+        
+
+
+
+
+
+
+
+  
+

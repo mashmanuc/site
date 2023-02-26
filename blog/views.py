@@ -2,9 +2,19 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    return render(request,'blog/index.html')
+    data={
+        'title':'Головна сторінка',
+        'velues':['Some','home','655555'],
+    }
+    return render(request,'blog/index.html', data)
 
 def about(request):
-    return render(request,'blog/about.html')
+    data={
+        'title':'Про нас'
+    }
+    return render(request,'blog/about.html', data)
 def lusa(request):
-    return render(request,'blog/lusa.html')
+    data={
+        'title':'Все'
+    }
+    return render(request,'blog/lusa.html', data)
