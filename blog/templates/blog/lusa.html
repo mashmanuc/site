@@ -2,8 +2,14 @@
 {% block title%}{{title}}{% endblock %}
 
 
-{%block content %}<p>Лузка</p>
-
-
-{% include 'blog\test.html'  %}
+{%block content %}
+    {% for el in news %}
+        <div class="instangram-txt">
+            <h3>{{el.title}}</h3>
+            <p>{{el.anons}} </p>
+            <div class="instangram-txt"> {{el.full_text}}
+            </div>
+        </div>
+    {% endfor %}
+    <td><a href="/admin/base/articls/add/" class="addlink">Додати</a></td>
 {% endblock %}
