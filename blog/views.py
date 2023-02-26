@@ -4,7 +4,7 @@ from django.http import HttpResponse
 def index(request):
     data={
         'title':'Головна сторінка',
-        'velues':['Some','home','655555'],
+        'velues':['Some','home','655555']
     }
     return render(request,'blog/index.html', data)
 
